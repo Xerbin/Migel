@@ -1,4 +1,4 @@
-# 🚀 Migel — A Vibe-Coded Programming Language ✨
+# 🚀 Migel — A (Programming) Language ✨
 
 Migel is a programming language designed to be **simple**, **clear**, and **JS-compatible** — and we *really* mean that last part! 😎
 
