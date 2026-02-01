@@ -1,0 +1,20 @@
+{
+  "name": "migel",
+  "version": "1.0.0",
+  "description": "migel is A language",
+  "keywords": [
+    "programming-language"
+  ],
+  "license": "MPL 2.0",
+  "author": "xerbin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js test.migel && node test.js",
+    "run": "node index.js"
+  },
+  "dependencies": {
+    "ansi-escapes": "^7.2.0",
+    "readline-sync": "^1.4.10"
+  }
+}
