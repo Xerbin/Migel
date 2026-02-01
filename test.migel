@@ -1,0 +1,39 @@
+// Floats work now!
+// from
+import "./migel-charcoal.js"
+x = 3.14
+y = read()
+yz = read("ezez")
+write(x)
+
+// Import with dots in path (inside STRING = safe!)
+import {readFileSync} from "fs"
+// content = readFileSync("./package.json", "utf8")
+// write(json(parseJson(content)))
+loop(5) 
+{
+    if (index != 2) {
+        write("its not two :(")
+    } elif (index == 2) {
+        write("it is two:))))))))))))))))))))))))))))")
+    } elif (index == 3) {
+        write("it is three")
+    } else {
+        write("what is that? :o")
+    }
+}
+// Built-ins just work!
+write("Random: " + magic())
+write(double(21))
+write(y, "ogga\n", "else")
+write("hi")
+write(yz)
+write(join("hello", " ", "world", 42))
+if (1 > 2) {
+    write("hlalo")
+} else {
+    write("is halal")
+}
+// write(xyz)
+//write(🍎 + 🍌)
+// yell("migel is alive")
