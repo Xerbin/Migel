@@ -22,29 +22,28 @@ Migel is a tiny language that feels like home if you love JavaScript! Here's the
 
 No compiler. No interpreter. Just pure ✨ *transpilation magic* ✨
 
-Your Migel code gets translated into (let's be real — sometimes messy 😅) JavaScript, which then runs like any other JS code. Simple, right?
+Your Migel code gets translated into JavaScript, which then runs like any other JS code. Simple, right?
 
-> 🔮 *Future note:* We might build a real compiler someday… but for now, transpilation keeps things light and vibey!*
+> We might build a real compiler someday… but for now, transpilation keeps things light
 
 ---
 
 ## 🌈 Features
 
-✅ **Dynamic typing** — no type drama here  
+✅ **Dynamic typing** — just like JS
 ✅ **JS-style syntax** — feels familiar instantly  
 ✅ **Super simple names** — `write()` writes to the console, duh! ✍️  
-✅ **Built-in stdlib ("charcoal")** — handy tools out of the box  
-✅ **One beautiful loop** — because sometimes less is more 🔁  
-✅ **Full JS/npm access** — import any JS file or npm package like a boss 📦
+✅ **Built-in stdlib ("charcoal")** — handy tools out of the box    
+✅ **Full JS/npm access** — import *almost* any JS file or npm package like a boss 📦 (check the docs)
 
 ---
 
 ## 🔮 What's Next?
 
-- ✍️ **Rewrite the core** — by hand, with love (and fewer AI surprises)  
+- ✍️ **Rewrite the core** — by hand, with love
 - 📚 **Expand the stdlib** — more helpers, more fun  
 - 🚀 **Level up built-ins** — because why stop at `write()`?  
 
 ---
 
-Made with 💜 and good vibes. Welcome to Migel! 🎉
+*everything is currently in beta, things might change or break*
