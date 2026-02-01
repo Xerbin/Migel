@@ -1,2 +1,50 @@
-# Migel
-Migel is A (programming) language
+# 🚀 Migel — A Vibe-Coded Programming Language ✨
+
+Migel is a programming language designed to be **simple**, **clear**, and **JS-compatible** — and we *really* mean that last part! 😎
+
+> 💡 **VIBE CODED !!!**  
+> This first version of Migel was written entirely by AI! I'm planning to rewrite the whole project myself soon — just wanted to keep it 100% transparent. 🔮
+
+---
+
+## 🤔 What is Migel?
+
+Migel is a tiny language that feels like home if you love JavaScript! Here's the magic:
+
+- ✨ The standard library **"charcoal"** is written in JS  
+- ⚙️ Migel runs on **Node.js**  
+- 💫 Your Migel code gets **transpiled** straight into JavaScript  
+- 🧪 That means you get all the JS superpowers — *for free*!
+
+---
+
+## ⚡ How Does It Work?
+
+No compiler. No interpreter. Just pure ✨ *transpilation magic* ✨
+
+Your Migel code gets translated into (let's be real — sometimes messy 😅) JavaScript, which then runs like any other JS code. Simple, right?
+
+> 🔮 *Future note:* We might build a real compiler someday… but for now, transpilation keeps things light and vibey!*
+
+---
+
+## 🌈 Features
+
+✅ **Dynamic typing** — no type drama here  
+✅ **JS-style syntax** — feels familiar instantly  
+✅ **Super simple names** — `write()` writes to the console, duh! ✍️  
+✅ **Built-in stdlib ("charcoal")** — handy tools out of the box  
+✅ **One beautiful loop** — because sometimes less is more 🔁  
+✅ **Full JS/npm access** — import any JS file or npm package like a boss 📦
+
+---
+
+## 🔮 What's Next?
+
+- ✍️ **Rewrite the core** — by hand, with love (and fewer AI surprises)  
+- 📚 **Expand the stdlib** — more helpers, more fun  
+- 🚀 **Level up built-ins** — because why stop at `write()`?  
+
+---
+
+Made with 💜 and good vibes. Welcome to Migel! 🎉
