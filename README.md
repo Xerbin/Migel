@@ -1,6 +1,6 @@
 # 🚀 Migel — A (Programming) Language ✨
 
-Migel is a programming language designed to be **simple**, **clear**, and **JS-compatible** — and we *really* mean that last part! 😎
+Migel is a programming language designed to be **simple**, **clear**, and **JS-compatible** — and I *really* mean that last part!
 
 > 💡 **VIBE CODED !!!**  
 > This first version of Migel was written entirely by AI! I'm planning to rewrite the whole project myself soon — just wanted to keep it 100% transparent. 🔮
@@ -24,7 +24,7 @@ No compiler. No interpreter. Just pure ✨ *transpilation magic* ✨
 
 Your Migel code gets translated into JavaScript, which then runs like any other JS code. Simple, right?
 
-> We might build a real compiler someday… but for now, transpilation keeps things light
+> I might build a real compiler. but for now, transpilation keeps things light
 
 ---
 
