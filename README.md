@@ -49,6 +49,7 @@ git clone https://github.com/Xerbin/Migel
 (or just use the "download zip" button)
 
 2. run it!
+
 if you've used the download zip method, extract the zip file and go to the extracted folder. then run:
 ```bash
 npm test
