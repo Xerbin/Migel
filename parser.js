@@ -13,11 +13,6 @@ function createParser(tokens) {
   };
 
   function statement() {
-    // Skip type annotations
-    if (peek().type === 'KEYWORD' && ['int', 'str', 'bool'].includes(peek().value)) {
-      pos++;
-    }
-
     // IMPORT statements
     if (peek().value === 'import') {
       pos++;
@@ -65,8 +60,7 @@ function createParser(tokens) {
       return `console.log(${expr});`;
     }
 
-    // ✨ IF STATEMENTS (with full else-if support) ✨
-    // ✨ IF STATEMENTS with ELIF support ✨
+    // IF STATEMENTS with ELIF support
     if (peek().value === 'if') {
       pos++; consume('LPAREN');
       const condition = expression();

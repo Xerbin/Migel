@@ -5,7 +5,7 @@
   "keywords": [
     "programming-language"
   ],
-  "license": "MPL 2.0",
+  "license": "ISC",
   "author": "xerbin",
   "type": "commonjs",
   "main": "index.js",
