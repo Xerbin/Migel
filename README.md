@@ -39,6 +39,28 @@ Your Migel code gets translated into JavaScript, which then runs like any other 
 
 ---
 
+# Getting started
+## Requirements
+* Node.js: at least v24
+1. clone the repo:
+```bash
+git clone https://github.com/Xerbin/Migel
+```
+(or just use the "download zip" button)
+
+2. run it!
+if you've used the download zip method, extract the zip file and go to the extracted folder. then run:
+```bash
+npm test
+```
+to run the test file or:
+```bash
+node index.js <your-migel-file>
+```
+to translate a .mig or .migel file. you need node.js to do this, obviously.
+
+---
+
 ## 🔮 What's Next?
 
 - ✍️ **Rewrite the core** — by hand, with love
