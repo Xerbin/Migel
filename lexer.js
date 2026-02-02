@@ -77,13 +77,13 @@ function tokenize(src) {
     const context = src.slice(contextStart, contextEnd).replace(/\n/g, '↵');
     throw new Error(
       `Unexpected character: '${c}' at position ${i}\n` +
-      `Context: ...${context}...\n` +
-      `Hint: Migel only allows '.' in numbers (3.14) or strings ("./path"). No obj.prop yet!`
+      `Context: ...${context}...\n`
     );
   }
 
   tokens.push({ type: 'EOF' });
   return tokens;
 }
+
 
 module.exports = { tokenize, KEYWORDS };
