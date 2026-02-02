@@ -30,13 +30,12 @@ Your Migel code gets translated into JavaScript, which then runs like any other 
 
 ## 🌈 Features
 
-✅ **Dynamic typing** — just like JS
-
-✅ **JS-style syntax** — feels familiar instantly  
-✅ **Super simple names** — `write()` writes to the console, duh! ✍️  
-✅ **Built-in stdlib ("charcoal")** — handy tools out of the box    
-✅ **JS/npm access** — import *almost* any JS file or npm package 📦 (check the docs)
-🚫 No obj.prop relations — keep it flat, keep it clean! (No dot-chaining objects here.)
+* ✅ **Dynamic typing** — just like JS
+* ✅ **JS-style syntax** — feels familiar instantly  
+* ✅ **Super simple names** — `write()` writes to the console, duh! ✍️  
+* ✅ **Built-in stdlib ("charcoal")** — handy tools out of the box    
+* ✅ **JS/npm access** — import *almost* any JS file or npm package 📦 (check the docs)
+* 🚫 No obj.prop relations — keep it flat, keep it clean! (No dot-chaining objects here.)
 
 ---
 
