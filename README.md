@@ -2,8 +2,8 @@
 
 Migel is a programming language designed to be **simple**, **clear**, and **JS-compatible** — and I *really* mean that last part!
 
-> 💡 **VIBE CODED !!!**  
-> This first version of Migel was written entirely by AI! I'm planning to rewrite the whole project myself soon — just wanted to keep it 100% transparent. 🔮
+> 💡 **vibe coded**  
+> This version of Migel is written by AI! I'm rewriting the whole project myself — just wanted to keep it 100% transparent. 🔮
 
 ---
 
