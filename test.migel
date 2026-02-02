@@ -1,7 +1,33 @@
+// importing the chacoal stdlib
+import "./migel-charcoal"
 // hello!
 write("hello, world!")
 // a variable
 x = 3.14
 write("x is ", x)
 // echo
-write(read("say what you want!"))
+write(read("say what you want! "))
+// if/elif/else
+number = read("a number? ")
+if (number == 1) {
+    write("small number")
+} elif (number < 20) {
+    write("medium number")
+} else {
+    write("big number")
+}
+if (true) {
+    write("true")
+}
+if (false) {
+    write("false")
+}
+// loop using the index variable
+loop(number) {
+    // since the index starts from zero
+    write("this has been printed", (index+1), "times")
+}
+
+while(true) {
+    write("its on!")
+}

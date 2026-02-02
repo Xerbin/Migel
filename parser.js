@@ -8,7 +8,7 @@ function createParser(tokens) {
     return tokens[pos++].value;
   };
 
-  const optionalSemi = () => {
+  const checkSemi = () => {
     if (peek().type === 'SEMI') pos++;
   };
 
@@ -29,21 +29,21 @@ function createParser(tokens) {
           throw new Error(`Expected "from", got ${peek().value}`);
         pos++;
         const pkg = consume('STRING');
-        optionalSemi();
+        checkSemi();
         return `const {${names.join(',')}} = require("${pkg}");`;
       } else if (peek().type === 'STRING') {
         const pkg = consume('STRING');
-        optionalSemi();
+        checkSemi();
         return `require("${pkg}");`;
       } else if (peek().type === 'IDENT') {
         const pkg = consume('IDENT');
         if (peek().value === 'as') {
           pos++;
           const alias = consume('IDENT');
-          optionalSemi();
+          checkSemi();
           return `const ${alias} = require("${pkg}");`;
         } else {
-          optionalSemi();
+          checkSemi();
           return `const ${pkg} = require("${pkg}");`;
         }
       } else {
@@ -56,7 +56,7 @@ function createParser(tokens) {
       pos++; consume('LPAREN');
       const expr = expression();
       consume('RPAREN');
-      optionalSemi();
+      checkSemi();
       return `console.log(${expr});`;
     }
 
@@ -90,7 +90,7 @@ function createParser(tokens) {
         elseClause += `else{${elseBody}}`;
       }
 
-      optionalSemi();
+      checkSemi();
       return `if(${condition}){${thenBody}}${elseClause}`;
     }
     // ASSIGNMENT
@@ -98,21 +98,32 @@ function createParser(tokens) {
       const id = consume('IDENT');
       consume('EQUAL');
       const expr = expression();
-      optionalSemi();
+      checkSemi();
       return `${id}=${expr};`;
     }
 
     // OTHER KEYWORDS
     if (peek().type === 'KEYWORD') {
       const kw = peek().value;
+      // Handling loop
       if (kw === 'loop') {
         pos++; consume('LPAREN');
         const count = expression();
         consume('RPAREN'); consume('LBRACE');
         const body = block();
         consume('RBRACE');
-        optionalSemi();
+        checkSemi();
         return `for(let index=0;index<${count};index++){${body}}`;
+      }
+      // Handling while
+      if (kw === 'while') {
+        pos++; consume('LPAREN');
+        const condition = expression();
+        consume('RPAREN'); consume('LBRACE');
+        const body = block();
+        consume('RBRACE');
+        checkSemi();
+        return `while(${condition}){${body}}`;
       }
       if (kw === 'fn') {
         pos++; const name = consume('IDENT'); consume('LPAREN');
@@ -127,19 +138,19 @@ function createParser(tokens) {
         consume('RPAREN'); consume('LBRACE');
         const body = block();
         consume('RBRACE');
-        optionalSemi();
+        checkSemi();
         return `function ${name}(${params.join(',')}){${body}}`;
       }
       if (kw === 'ret') {
         pos++; const expr = expression();
-        optionalSemi();
+        checkSemi();
         return `return ${expr};`;
       }
     }
 
     // BARE EXPRESSIONS
     const expr = expression();
-    optionalSemi();
+    checkSemi();
     return `${expr};`;
   }
 
