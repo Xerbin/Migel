@@ -1,0 +1,2 @@
+// Auto-generated from test.migel
+require('./migel-builtins.js');require("./migel-charcoal");write("hello, world!");x=3.14;write("x is ",x);write(read("say what you want! "));number=read("a number? ");if(number==1){write("small number");}else if(number<20){write("medium number");}else{write("big number");}if(true){write("true");}if(false){write("false");}for(let index=0;index<number;index++){write("this has been printed",(index+1),"times");}while(true){write("its on!");}

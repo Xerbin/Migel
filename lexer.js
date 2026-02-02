@@ -6,7 +6,7 @@ const PUNCTUATION = {
   '=': 'EQUAL', '>': 'GT', '<': 'LT'
 };
 
-const KEYWORDS = ['loop', 'fn', 'ret', 'if', 'else', 'elif', 'int', 'str', 'bool', 'import', 'from'];
+const KEYWORDS = ['loop', 'while', 'fn', 'ret', 'if', 'else', 'elif', 'int', 'str', 'bool', 'import', 'from'];
 
 function tokenize(src) {
   const tokens = [];

@@ -2,7 +2,8 @@
 module.exports = {
   flip: (bool) => !bool,
   double: (x) => x * 2,
-  magic: () => Math.random(),
+  magicf: () => Math.random(),
+  magic: Math.random(),
   date: () => Date.now(),
   json: (obj) => JSON.stringify(obj, null, 2),
   parseJson: (str) => JSON.parse(str),
