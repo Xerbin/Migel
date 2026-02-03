@@ -42,7 +42,7 @@ Your Migel code gets translated into JavaScript, which then runs like any other 
 # Getting started
 ## Requirements
 * Node.js: at least v24
-> theres also a vsix extension that offers simple but useful features! you can check it out [here](https://github.com/Xerbin/Migel-syntax-vscode)
+> theres also a vscode vsix extension that offers simple but useful features! you can check it out [here](https://github.com/Xerbin/Migel-syntax-vscode)
 1. clone the repo:
 ```bash
 git clone https://github.com/Xerbin/Migel
